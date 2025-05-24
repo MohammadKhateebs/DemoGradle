@@ -18,6 +18,6 @@ public class HelloControllerIntegrationTest {
     @Test
     public void getHello() throws Exception {
         ResponseEntity<String> response = template.getForEntity("/", String.class);
-        assertThat(response.getBody()).isEqualTo("Spring Boot Gradle App! V2");
+        assertThat(response.getBody()).isEqualTo("Hi Khateeb");
     }
 }
